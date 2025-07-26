@@ -62,7 +62,7 @@ sudo snort -i enp0s3 -A console -c /etc/snort/snort.conf -l /var/log/snort
 ping -c 5 192.168.56.105
 ```
 
-- [Ping Target](ping.png)
+[Screenshot Ping Target](ping.png)
 
 ### 2. Port Scan
 
@@ -70,7 +70,7 @@ ping -c 5 192.168.56.105
 nmap -sS 192.168.56.105
 ```
 
--[Scan Target](nmap.png)
+[Screenshot Scan Target](nmap.png)
 
 ---
 
@@ -89,7 +89,7 @@ drop tcp any any -> any 22 (msg:"DROP SSH Connection"; sid:1000002; rev:1;)
 alert tcp any any -> any 80 (msg:"HTTP Access Detected"; sid:1000003; rev:1;)
 ```
 
-- [Rules](rules.png)
+[Screenshot Rules](rules.png)
 
 ---
 
@@ -104,8 +104,8 @@ alert tcp any any -> any 80 (msg:"HTTP Access Detected"; sid:1000003; rev:1;)
 
 ## Lampiran
 
-- [Output via Terminal](output-ids.png)
-- [Output Log Attacker](log-attacker.png)
+- [Screenshot Output via Terminal](output-ids.png)
+- [Screenshot Output Log Attacker](log-attacker.png)
 
 ---
 
