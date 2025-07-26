@@ -34,7 +34,7 @@ sudo apt update
 sudo apt install -y snort
 ```
 
-- Verifikasi:
+Verifikasi:
 
 ```bash
 snort -V
@@ -46,11 +46,12 @@ snort -V
 sudo snort -i enp0s3 -A console -c /etc/snort/snort.conf -l /var/log/snort
 ```
 
-- Penjelasan:
-  - `-i`: interface (contoh: enp0s3)
-  - `-A console`: tampilkan alert ke terminal
-  - `-c`: konfigurasi utama
-  - `-l`: folder untuk log
+Penjelasan:
+
+- `-i`: interface (contoh: enp0s3)
+- `-A console`: tampilkan alert ke terminal
+- `-c`: konfigurasi utama
+- `-l`: folder untuk log
 
 ---
 
@@ -76,7 +77,7 @@ nmap -sS 192.168.56.105
 
 ## Penulisan Custom Rule
 
-- Buat Rules di sudo nano /etc/snort/rules/local.rules:
+Buat Rules di sudo nano /etc/snort/rules/local.rules:
 
 ```bash
 # Deteksi ping ICMP
@@ -95,10 +96,11 @@ alert tcp any any -> any 80 (msg:"HTTP Access Detected"; sid:1000003; rev:1;)
 
 ## Kesimpulan
 
-- Proyek ini menunjukkan keterampilan dasar hingga menengah dalam keamanan jaringan:
-  - Menyiapkan sistem IDS/IPS berbasis Snort.
-  - Mengembangkan custom rules untuk mendeteksi dan mencegah serangan.
-  - Menguji efektivitas rule menggunakan skenario nyata.
+Proyek ini menunjukkan keterampilan dasar hingga menengah dalam keamanan jaringan:
+
+- Menyiapkan sistem IDS/IPS berbasis Snort.
+- Mengembangkan custom rules untuk mendeteksi dan mencegah serangan.
+- Menguji efektivitas rule menggunakan skenario nyata.
 
 ---
 
