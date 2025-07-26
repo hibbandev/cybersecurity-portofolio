@@ -1,14 +1,18 @@
 # Cyber Security Portfolio
 
-Hi, saya Hibban. Ini adalah portofolio saya sebagai Cyber Security Engineer pemula.
+Hi, saya Ibnu Hibban Dzulfikri. Ini adalah portofolio saya sebagai Cyber Security Engineer pemula.
+
+## Projects
+
+- [UFW Firewall Implementation](Projects/UFW_Firewall_Rules/firewall-config.md)
+- [Wazuh SIEM Implementation](Projects/Wazuh/siem-lab-report.md)
+- [Snort-based IDS/IPS Lab Project](Projects/Snort/snort-project.md)
 
 ## Reports
 
 - [Nmap on Metasploitable2](Reports/Nmap/nmap-report.md)
 - [Nessus Scanning](Reports/Nessus/nessus-report.md)
-- [UFW Firewall Implementation](Reports/UFW_Firewall_Rules/firewall-config.md)
 - [SQL Injection Attack](Reports/SQL_Injection/sql-injection.md)
-- [Wazuh SIEM Implementation](Reports/Wazuh/siem-lab-report.md)
 
 ## Certificates
 

@@ -15,9 +15,9 @@ Client Host (Ubuntu):
 - Wazuh Agent
 - Filebeat (opsional)
 
-  |
-  | (data logs, integrity, auth, dll)
-  v
+(data logs, integrity, auth, dll)
+
+Terhubung ke:
 
 SIEM Server (Ubuntu):
 
@@ -27,7 +27,7 @@ SIEM Server (Ubuntu):
 
 ---
 
-## 3. Tools & Versi
+## Tools & Versi
 
 | Komponen      | Versi           |
 | ------------- | --------------- |
@@ -45,7 +45,10 @@ SIEM Server (Ubuntu):
 
 - OS: Ubuntu 24.04 LTS (64-bit)
 - Update repositori & upgrade
-  `sudo apt update && sudo apt upgrade -y`
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
 
 ### Instal Wazuh Manager, Indexer, dan Dashboard
 
@@ -95,7 +98,10 @@ sudo systemctl status wazuh-dashboard
 ### Menyiapkan Agent Registration
 
 Agar agent bisa register ke server:
-`sudo /var/ossec/bin/manage_agents`
+
+```bash
+sudo /var/ossec/bin/manage_agents
+```
 
 - Pilih A untuk menambahkan agen baru.
 - Masukkan nama & IP agent.
@@ -104,7 +110,10 @@ Agar agent bisa register ke server:
 ### Memeriksa Log Wazuh
 
 Untuk troubleshooting:
-`sudo tail -f /var/ossec/logs/ossec.log`
+
+```bash
+sudo tail -f /var/ossec/logs/ossec.log
+```
 
 ---
 
@@ -130,7 +139,10 @@ sudo apt-get install -f
 ### Konfigurasi Agent
 
 Edit konfigurasi agar agent mengenali Wazuh Manager:
-`sudo nano /var/ossec/etc/ossec.conf`
+
+```bash
+sudo nano /var/ossec/etc/ossec.conf
+```
 
 Pada bagian <client>:
 
@@ -164,12 +176,18 @@ sudo /var/ossec/bin/manage_agents
 
 Di client
 Masukkan key:
-`sudo /var/ossec/bin/agent-auth -m 192.168.101.11 -p 1515 -A Ubuntu`
+
+```bash
+sudo /var/ossec/bin/agent-auth -m 192.168.101.11 -p 1515 -A Ubuntu
+```
 
 ### Verifikasi koneksi
 
 Di server
-`sudo /var/ossec/bin/agent_control -l`
+
+```bash
+sudo /var/ossec/bin/agent_control -l
+```
 
 Hasilnya:
 `ID: 001, Name: Ubuntu, IP: any, Active`
@@ -178,10 +196,16 @@ Hasilnya:
 
 Tes log
 Buat entry ke /var/log/syslog:
-`echo "Testing wazuh agent" | sudo tee -a /var/log/syslog`
+
+```bash
+echo "Testing wazuh agent" | sudo tee -a /var/log/syslog
+```
 
 Pantau di server
-`sudo tail -f /var/ossec/logs/ossec.log`
+
+```bash
+sudo tail -f /var/ossec/logs/ossec.log
+```
 
 ---
 

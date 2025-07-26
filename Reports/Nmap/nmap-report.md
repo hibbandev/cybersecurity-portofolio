@@ -51,9 +51,10 @@ nmap -sV -A 192.168.56.104 -oN nmap_scan.txt
 | 8180/tcp | open  | http        | Apache Tomcat/Coyote JSP 1.1    |
 
 OS Detection :
-Device type: general purpose
-Running: Linux 2.6.X
-OS CPE: cpe:/o:linux:linux_kernel:2.6
+
+- Device type: general purpose
+- Running: Linux 2.6.X
+- OS CPE: cpe:/o:linux:linux_kernel:2.6
 
 ---
 

@@ -19,7 +19,9 @@ sudo apt install ufw
 
 ## Mengecek status UFW
 
-`sudo ufw status verbose`
+```bash
+sudo ufw status verbose
+```
 
 Biasanya jika fresh install statusnya inactive.
 
@@ -32,8 +34,8 @@ sudo ufw default deny incoming
 sudo ufw default allow outgoing
 ```
 
-Incoming: Ditolak secara default untuk mencegah akses tidak sah.
-Outgoing: Diizinkan secara default agar server tetap dapat mengakses internet / update.
+- Incoming: Ditolak secara default untuk mencegah akses tidak sah.
+- Outgoing: Diizinkan secara default agar server tetap dapat mengakses internet / update.
 
 ---
 
@@ -49,19 +51,24 @@ sudo ufw allow 443/tcp
 
 ## Denied Rules
 
-`sudo ufw deny 23/tcp`
+```bash
+sudo ufw deny 23/tcp
+```
 
 ---
 
 ## Firewall Status
 
-`sudo ufw status verbose`
+```bash
+sudo ufw status verbose
+```
 
 Output:
-Status: active
-Logging: on (low)
-Default: deny (incoming), allow (outgoing), disabled (routed)
-New profiles: skip
+
+- Status: active
+- Logging: on (low)
+- Default: deny (incoming), allow (outgoing), disabled (routed)
+- New profiles: skip
 
 | Port | Protocol | From          | Action   | Description            |
 | ---- | -------- | ------------- | -------- | ---------------------- |
@@ -78,10 +85,12 @@ New profiles: skip
 
 ## Logging
 
-`sudo ufw logging on`
+```bash
+sudo ufw logging on
+```
 
-Level default: low
-Logging penting untuk memonitor aktivitas mencurigakan.
+- Level default: low
+- Logging penting untuk memonitor aktivitas mencurigakan.
 
 ---
 

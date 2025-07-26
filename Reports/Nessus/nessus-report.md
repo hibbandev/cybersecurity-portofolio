@@ -10,9 +10,8 @@
 
 ## Instalasi Nessus
 
-Download nessus di https://www.tenable.com/downloads
-
-Jalankan di terminal
+- Download nessus di https://www.tenable.com/downloads
+- Jalankan di terminal:
 
 ```bash
 sudo dpkg -i Nessus-10.9.0-debian6_amd64.deb
@@ -20,9 +19,8 @@ sudo systemctl start nessusd
 sudo systemctl enable nessusd
 ```
 
-Buka browser ke : https://localhost:8834
-
-Register dengan Nessus Essentials (gratis)
+- Buka browser ke : https://localhost:8834
+- Register dengan Nessus Essentials (gratis)
 
 ---
 
