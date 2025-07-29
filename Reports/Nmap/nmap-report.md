@@ -122,6 +122,7 @@ Target Metasploitable2 secara sengaja memiliki banyak celah keamanan dan layanan
 ## _Ditulis oleh:_
 
 **Ibnu Hibban Dzulfikri**
+
 LinkedIn: https://www.linkedin.com/in/ibnu-hibban-dzulfikri-b51a7824a
 
 ---

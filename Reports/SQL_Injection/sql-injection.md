@@ -123,6 +123,7 @@ Dengan menggabungkan praktik pengembangan aplikasi yang aman (secure coding), ko
 ## _Ditulis oleh:_
 
 **Ibnu Hibban Dzulfikri**
+
 LinkedIn: https://www.linkedin.com/in/ibnu-hibban-dzulfikri-b51a7824a
 
 ---
