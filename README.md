@@ -13,6 +13,7 @@ Hi, saya Ibnu Hibban Dzulfikri. Ini adalah portofolio saya sebagai Cyber Securit
 - [Nmap on Metasploitable2](Reports/Nmap/nmap-report.md)
 - [Nessus Scanning](Reports/Nessus/nessus-report.md)
 - [SQL Injection Attack](Reports/SQL_Injection/sql-injection.md)
+- [Burp Suite Report](Reports/Burp_Suite/burp-suite.md)
 
 ## Certificates
 
